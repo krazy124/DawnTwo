@@ -1381,6 +1381,9 @@
               },
               "options__2": {
                 "label": "Button"
+              },
+              "options__3": {
+                "label": "Image"
               }
             }
           }
