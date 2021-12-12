@@ -58,8 +58,8 @@
         "title",
         "subtitle",
         "price",
-        "quantity_selector",
         "variant_picker",
+        "quantity_selector",
         "buy_buttons",
         "description",
         "share"
