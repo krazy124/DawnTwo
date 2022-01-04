@@ -348,7 +348,32 @@ __productWizRio.config = {
   "desktop": {
     "swipe": true,
     "dark": true,
-    "thumbnails": false,
+    "thumbnails": {
+      "orientation": "bottom",
+      "thumbnailWidth": 99,
+      "multiRow": false,
+      "navigation": true,
+      "navigationSettings": {
+        "size": 5,
+        "fill": "rgba(255, 255, 255, 1)",
+        "background": "rgba(155, 155, 155, 1)"
+      },
+      "spacing": 2,
+      "spacingFromImage": 0,
+      "fit": "cover",
+      "borderSelected": {
+        "style": "solid",
+        "color": "rgba(181, 220, 253, 1)",
+        "thickness": 4,
+        "radius": 0
+      },
+      "borderUnselected": {
+        "style": "solid",
+        "color": null,
+        "thickness": 1,
+        "radius": 0
+      }
+    },
     "border": {
       "style": "solid",
       "color": null,
@@ -433,7 +458,7 @@ __productWizRio.config = {
   "lightBoxBackgroundColor": "rgb(0, 0, 0)",
   "breakpoint": "750px",
   "disableNavigationWithMedia": false,
-  "galaxio": "{\"mobile\":{\"layout\":\"no-thumbnails\",\"layoutStackedSpacing\":1,\"thumbnailImageFit\":\"none\",\"thumbnailSpacing\":1,\"thumbnailSpacingFromImage\":1,\"thumbnailsHorizontal\":{\"type\":\"responsive\",\"responsive\":{\"thumbnailsPerRow\":3},\"fixed\":{\"thumbnailWidth\":110}},\"thumbnailsVertical\":{\"type\":\"responsive\",\"responsive\":{\"container\":0.25},\"fixed\":{\"thumbnailWidth\":110}},\"thumbnailCarousel\":true,\"thumbnailCarouselSettings\":{\"arrowSize\":5,\"arrowColorFill\":\"rgba(255, 255, 255, 1)\",\"arrowColorBackground\":\"rgba(0, 0, 0, 0.5)\"},\"thumbnailBorderSelected\":{\"style\":\"solid\",\"color\":\"rgb(0, 0, 0)\",\"thickness\":1,\"radius\":0},\"thumbnailBorderUnselected\":{\"style\":\"solid\",\"color\":null,\"thickness\":1,\"radius\":0},\"imageFit\":\"natural\",\"imageFitCustom\":500,\"imageBorder\":{\"style\":\"solid\",\"color\":null,\"thickness\":1,\"radius\":0},\"simulateTouch\":false,\"preloadNextImage\":false,\"slideTransition\":\"scroll\",\"slideLoopInfinite\":false,\"slideCircular\":false,\"arrows\":false,\"arrowSettings\":{\"type\":\"oval\",\"size\":5,\"colorFill\":\"rgba(255, 255, 255, 1)\",\"colorBackground\":\"rgba(0, 0, 0, 0.3)\"},\"zoomType\":\"lightBox\",\"zoomSettings\":{\"lightBoxZoom\":2,\"magnifyZoom\":2},\"pagination\":false,\"paginationSettings\":{\"type\":\"standard\",\"clickable\":false,\"size\":3,\"spacing\":3,\"spacingFromImage\":0,\"standardColors\":{\"selected\":\"rgba(0, 0, 0, 0.75)\",\"unselected\":\"rgba(0, 0, 0, 0.2)\"},\"numericColors\":{\"selectedBackground\":\"rgba(0, 0, 0, 0.75)\",\"unselectedBackground\":\"rgba(0, 0, 0, 0.2)\",\"selectedFill\":\"rgba(255, 255, 255, 1)\",\"unselectedFill\":\"rgba(0, 0, 0, 1)\"}}},\"desktop\":{\"layout\":\"no-thumbnails\",\"layoutStackedSpacing\":1,\"thumbnailImageFit\":\"cover\",\"thumbnailSpacing\":2,\"thumbnailSpacingFromImage\":0,\"thumbnailsHorizontal\":{\"type\":\"fixed\",\"responsive\":{\"thumbnailsPerRow\":10},\"fixed\":{\"thumbnailWidth\":99}},\"thumbnailsVertical\":{\"type\":\"fixed\",\"responsive\":{\"container\":0.15},\"fixed\":{\"thumbnailWidth\":50}},\"thumbnailCarousel\":true,\"thumbnailCarouselSettings\":{\"arrowSize\":4,\"arrowColorFill\":\"rgba(255, 255, 255, 1)\",\"arrowColorBackground\":\"rgba(0, 0, 0, 0.5)\"},\"thumbnailBorderSelected\":{\"style\":\"solid\",\"color\":\"rgba(181, 220, 253, 1)\",\"thickness\":4,\"radius\":0},\"thumbnailBorderUnselected\":{\"style\":\"solid\",\"color\":null,\"thickness\":1,\"radius\":0},\"imageFit\":\"square\",\"imageFitCustom\":999,\"imageBorder\":{\"style\":\"solid\",\"color\":null,\"thickness\":1,\"radius\":0},\"simulateTouch\":true,\"preloadNextImage\":false,\"slideTransition\":\"fade\",\"slideLoopInfinite\":false,\"slideCircular\":false,\"arrows\":true,\"arrowSettings\":{\"type\":\"square\",\"size\":4,\"colorFill\":\"rgba(255, 255, 255, 1)\",\"colorBackground\":\"rgba(227, 239, 255, 1)\"},\"zoomType\":\"magnify-lightBox\",\"zoomSettings\":{\"lightBoxZoom\":2,\"magnifyZoom\":1.5},\"pagination\":true,\"paginationSettings\":{\"type\":\"standard\",\"clickable\":true,\"size\":6,\"spacing\":5,\"spacingFromImage\":0,\"standardColors\":{\"selected\":\"rgba(9, 89, 211, 0.75)\",\"unselected\":\"rgba(0, 0, 0, 0.2)\"},\"numericColors\":{\"selectedBackground\":\"rgba(0, 0, 0, 0.75)\",\"unselectedBackground\":\"rgba(0, 0, 0, 0.2)\",\"selectedFill\":\"rgba(255, 255, 255, 1)\",\"unselectedFill\":\"rgba(0, 0, 0, 1)\"}}},\"settings\":{\"video\":{\"html5Player\":false,\"autoPlay\":true,\"muted\":false,\"controls\":true,\"loop\":true},\"externalVideo\":{\"autoPlay\":true,\"muted\":false,\"controls\":true},\"model\":{\"autoRotate\":true},\"lightBoxBackgroundColor\":\"rgb(0, 0, 0)\",\"disableArrowsWithMedia\":false,\"breakpoint\":\"750px\"}}"
+  "galaxio": "{\"mobile\":{\"layout\":\"no-thumbnails\",\"layoutStackedSpacing\":1,\"thumbnailImageFit\":\"none\",\"thumbnailSpacing\":1,\"thumbnailSpacingFromImage\":1,\"thumbnailsHorizontal\":{\"type\":\"responsive\",\"responsive\":{\"thumbnailsPerRow\":3},\"fixed\":{\"thumbnailWidth\":110}},\"thumbnailsVertical\":{\"type\":\"responsive\",\"responsive\":{\"container\":0.25},\"fixed\":{\"thumbnailWidth\":110}},\"thumbnailCarousel\":true,\"thumbnailCarouselSettings\":{\"arrowSize\":5,\"arrowColorFill\":\"rgba(255, 255, 255, 1)\",\"arrowColorBackground\":\"rgba(0, 0, 0, 0.5)\"},\"thumbnailBorderSelected\":{\"style\":\"solid\",\"color\":\"rgb(0, 0, 0)\",\"thickness\":1,\"radius\":0},\"thumbnailBorderUnselected\":{\"style\":\"solid\",\"color\":null,\"thickness\":1,\"radius\":0},\"imageFit\":\"natural\",\"imageFitCustom\":500,\"imageBorder\":{\"style\":\"solid\",\"color\":null,\"thickness\":1,\"radius\":0},\"simulateTouch\":false,\"preloadNextImage\":false,\"slideTransition\":\"scroll\",\"slideLoopInfinite\":false,\"slideCircular\":false,\"arrows\":false,\"arrowSettings\":{\"type\":\"oval\",\"size\":5,\"colorFill\":\"rgba(255, 255, 255, 1)\",\"colorBackground\":\"rgba(0, 0, 0, 0.3)\"},\"zoomType\":\"lightBox\",\"zoomSettings\":{\"lightBoxZoom\":2,\"magnifyZoom\":2},\"pagination\":false,\"paginationSettings\":{\"type\":\"standard\",\"clickable\":false,\"size\":3,\"spacing\":3,\"spacingFromImage\":0,\"standardColors\":{\"selected\":\"rgba(0, 0, 0, 0.75)\",\"unselected\":\"rgba(0, 0, 0, 0.2)\"},\"numericColors\":{\"selectedBackground\":\"rgba(0, 0, 0, 0.75)\",\"unselectedBackground\":\"rgba(0, 0, 0, 0.2)\",\"selectedFill\":\"rgba(255, 255, 255, 1)\",\"unselectedFill\":\"rgba(0, 0, 0, 1)\"}}},\"desktop\":{\"layout\":\"bottom-thumbnails\",\"layoutStackedSpacing\":1,\"thumbnailImageFit\":\"cover\",\"thumbnailSpacing\":2,\"thumbnailSpacingFromImage\":0,\"thumbnailsHorizontal\":{\"type\":\"fixed\",\"responsive\":{\"thumbnailsPerRow\":10},\"fixed\":{\"thumbnailWidth\":99}},\"thumbnailsVertical\":{\"type\":\"fixed\",\"responsive\":{\"container\":0.15},\"fixed\":{\"thumbnailWidth\":50}},\"thumbnailCarousel\":true,\"thumbnailCarouselSettings\":{\"arrowSize\":5,\"arrowColorFill\":\"rgba(255, 255, 255, 1)\",\"arrowColorBackground\":\"rgba(155, 155, 155, 1)\"},\"thumbnailBorderSelected\":{\"style\":\"solid\",\"color\":\"rgba(181, 220, 253, 1)\",\"thickness\":4,\"radius\":0},\"thumbnailBorderUnselected\":{\"style\":\"solid\",\"color\":null,\"thickness\":1,\"radius\":0},\"imageFit\":\"square\",\"imageFitCustom\":999,\"imageBorder\":{\"style\":\"solid\",\"color\":null,\"thickness\":1,\"radius\":0},\"simulateTouch\":true,\"preloadNextImage\":false,\"slideTransition\":\"fade\",\"slideLoopInfinite\":false,\"slideCircular\":false,\"arrows\":true,\"arrowSettings\":{\"type\":\"square\",\"size\":4,\"colorFill\":\"rgba(255, 255, 255, 1)\",\"colorBackground\":\"rgba(227, 239, 255, 1)\"},\"zoomType\":\"magnify-lightBox\",\"zoomSettings\":{\"lightBoxZoom\":2,\"magnifyZoom\":1.5},\"pagination\":true,\"paginationSettings\":{\"type\":\"standard\",\"clickable\":true,\"size\":6,\"spacing\":5,\"spacingFromImage\":0,\"standardColors\":{\"selected\":\"rgba(9, 89, 211, 0.75)\",\"unselected\":\"rgba(0, 0, 0, 0.2)\"},\"numericColors\":{\"selectedBackground\":\"rgba(0, 0, 0, 0.75)\",\"unselectedBackground\":\"rgba(0, 0, 0, 0.2)\",\"selectedFill\":\"rgba(255, 255, 255, 1)\",\"unselectedFill\":\"rgba(0, 0, 0, 1)\"}}},\"settings\":{\"video\":{\"html5Player\":false,\"autoPlay\":true,\"muted\":false,\"controls\":true,\"loop\":true},\"externalVideo\":{\"autoPlay\":true,\"muted\":false,\"controls\":true},\"model\":{\"autoRotate\":true},\"lightBoxBackgroundColor\":\"rgb(0, 0, 0)\",\"disableArrowsWithMedia\":false,\"breakpoint\":\"750px\"}}"
 };
 }
 
