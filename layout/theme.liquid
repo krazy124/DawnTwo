@@ -123,7 +123,9 @@
     {%- endif -%}
 
     <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
-  </head>
+  
+  {% if content_for_header contains 'rio.pwztag.com' %}{% render 'productwiz-rio', product: product, shop: shop, installGuard: true %}{% endif %}
+</head>
   
   <body class="gradient">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
